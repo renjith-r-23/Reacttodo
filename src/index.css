@@ -1,0 +1,189 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+
+  background: rgb(150,21,132);
+  background: linear-gradient(90deg, rgba(150,21,132,1) 0%, rgba(121,9,105,1) 50%, rgba(255,0,104,1) 100%);
+  color: #333; 
+  max-width: 650px;
+  height: 200vh;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.new-item-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: #f0f0f0; /* Match the background color */
+  padding: 1rem;
+  border: 1px solid #e0e0e0; /* Subtle border */
+  border-radius: 10px; /* Rounded corners */
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.btn {
+  background: #e0e0e0; /* Light gray background */
+  border: 2px solid #d0d0d0; /* Slightly darker border */
+  color: #333; /* Dark text color */
+  padding: 0.30em 0.8em;
+  border-radius: 15px; /* Rounded corners *
+  cursor: pointer;
+  outline: none;
+  
+  transition: all 0.3s; /* Smooth transitions */
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  box-shadow: 5px 5px 15px #c0c0c0, -5px -5px 15px #ffffff; /* Neumorphic shadow effect */
+}
+
+.btn.btn-danger {
+  background: #ff5050; /* Red background for danger buttons */
+  border: 1px solid #ff4040; /* Slightly darker border */
+  color: #fff; /* White text color */
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+.btn.btn-danger:hover,
+.btn.btn-danger:focus-visible {
+  box-shadow: 1px 1px 1px #ff4040, -1px -1px 1px #ff8080; 
+}
+
+.new-item-form input {
+  outline: none;
+  border: 2px solid #d0d0d0; /* Light gray border */
+  background: #f0f0f0; /* Light gray background */
+  border-radius: 20px; /* Rounded corners */
+  padding: 0.35em 0.6em;
+  color: #333; /* Dark text color */
+  transition: border 0.7s; 
+}
+
+.new-item-form input:focus {
+  border: 2px solid #aaa; /* Slightly darker border on focus */
+}
+
+.header {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.7rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  margin-left: 1rem;
+  list-style: none;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.list li:has(input:checked) label {
+  color: #ffffff; /* Dark text for checked items */
+  text-decoration: line-through; /* Strikethrough for checked items */
+}
+
+.list li {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.list li label {
+  /* display: flex; */
+  gap: 0.25rem;
+  cursor: pointer;
+  /* align-items: center; */
+  /* display: flex;
+  justify-content: start;
+  align-items: center; */
+}
+
+.list li:has(input:focus-visible) label {
+  outline: 1px solid #666; /* Highlight on focus */
+}
+
+
+
+/* .list li label::before {
+  content: "";
+  display: block;
+  width: 0.9rem;
+  height: 0.9rem;
+  position: relative;
+  background: #f0f0f0; 
+  border: 1px solid #d0d0d0; 
+  transition: all 0.3s; 
+} */
+
+.list li input {
+  outline: none;
+  width: .9rem;
+  height: .9rem;
+  pointer-events: none;
+  /* position: absolute; */
+}
+
+.list li label:hover::before {
+  box-shadow: 5px 5px 15px #c0c0c0, -5px -5px 15px #ffffff; /* Neumorphic shadow on hover */
+}
+
+.list li:has(input:checked) label::before {
+  content: "✔";
+  z-index: 55;
+
+  background: #4caf50; /* Green background for checked items */
+  color: #fff; /* White text color */
+}
+
+.list li:has(input:checked) label:hover::before {
+  background: #4caf50; /* Green background for checked items on hover */
+}
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -25deg,
+    #00ff04 0%,
+    #ffffff 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 50px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
