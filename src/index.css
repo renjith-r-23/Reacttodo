@@ -6,8 +6,8 @@
 body {
 
   background: rgb(150,21,132);
-  background: linear-gradient(90deg, rgba(150,21,132,1) 0%, rgba(255,0,104,1) 100%);
-  color: #333; 
+background: linear-gradient(90deg, rgba(0, 255, 0, 1) 0%, rgba(0, 128, 0, 1) 100%);
+color: #333;  color: #333; 
   max-width: 650px;
   height: 200vh;
   padding: 2rem;
